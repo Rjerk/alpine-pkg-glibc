@@ -5,10 +5,10 @@ pkgver="2.30"
 _pkgrel="0"
 pkgrel="0"
 pkgdesc="GNU C Library compatibility layer"
-arch="x86_64"
+arch="aarch64"
 url="https://github.com/sgerrand/alpine-pkg-glibc"
 license="LGPL"
-source="https://github.com/sgerrand/docker-glibc-builder/releases/download/$pkgver-$_pkgrel/glibc-bin-$pkgver-$_pkgrel-x86_64.tar.gz
+source="https://github.com/Rjerk/docker-glibc-builder/releases/download/$pkgver-$_pkgrel/glibc-bin-$pkgver-$_pkgrel-aarch64.tar.gz
 nsswitch.conf
 ld.so.conf"
 subpackages="$pkgname-bin $pkgname-dev $pkgname-i18n"
@@ -47,6 +47,6 @@ i18n() {
   cp -a "$srcdir"/usr/glibc-compat/share "$subpkgdir"/usr/glibc-compat
 }
 
-sha512sums="047827b2855c0dd62ba7f085dece3e4c38ec67f064c0f646566bb97035f69a1733571ce71584f07795a0c3014e80fa8811d50c7c35cccd19ee4c1d50f22bc552  glibc-bin-2.30-0-x86_64.tar.gz
+sha512sums="e1ee5ee6f7d83165c8c1d1f2f42bfdfb55e44eed590931c90bcefb589ca3e7ca3231c3b4b90053b457fcb1095dc03fb23a49c610496ce0da9200aaee11a55f22  glibc-bin-2.30-0-aarch64.tar.gz
 478bdd9f7da9e6453cca91ce0bd20eec031e7424e967696eb3947e3f21aa86067aaf614784b89a117279d8a939174498210eaaa2f277d3942d1ca7b4809d4b7e  nsswitch.conf
 2912f254f8eceed1f384a1035ad0f42f5506c609ec08c361e2c0093506724a6114732db1c67171c8561f25893c0dd5c0c1d62e8a726712216d9b45973585c9f7  ld.so.conf"
